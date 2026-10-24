@@ -20,7 +20,7 @@ body
 .image1:hover,
 .image1:focus-visible
 {
-  filter : brightness(1.25) drop-shadow(0 0 8px rgba(255, 243, 77, 0.9));
+  filter : brightness(1.25) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
   transform : scale(1.06);
 }
 .image
@@ -38,7 +38,7 @@ body
 .image:hover,
 .image:focus-visible
 {
-  filter : brightness(1.25) drop-shadow(0 0 8px rgba(255, 243, 77, 0.9));
+  filter : brightness(1.25) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
   transform : scale(1.06);
 }
 .image2
@@ -60,13 +60,14 @@ body
   position : absolute ;
   left : 625px;
   top : 245px;
-  width : 228px;
+  width : 100%;
+  max-width : 228px;
   height : 435px;
 }
 .image3:hover,
 .image3:focus-visible
 {
-  filter : brightness(1) drop-shadow(0 0 8px rgba(254, 246, 127, 0.9));
+  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
   transform : scale(1.06);
 }
 .text1
@@ -103,7 +104,7 @@ body
 .image5:hover,
 .image5:focus-visible
 {
-  filter : brightness(1) drop-shadow(0 0 8px rgba(254, 246, 127, 0.9));
+  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
   transform : scale(1.06);
 }
 .text2
