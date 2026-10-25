@@ -5,16 +5,43 @@ body
   min-height : 100%;
   margin : 0;
 }
+.st1
+{
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(184, 138, 190, 1) 0%,rgba(115, 88, 152, 1) 34.41%,rgba(73, 68, 130, 1) 71.44%,rgba(34, 25, 71, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(184, 138, 190, 1) ),color-stop(0.3441,rgba(115, 88, 152, 1) ),color-stop(0.7144,rgba(73, 68, 130, 1) ),color-stop(1,rgba(34, 25, 71, 1) ));
+  background : -o-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  background : -ms-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B88ABE', endColorstr='#221947' ,GradientType=0)";
+  background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  position : absolute ;
+  left : 0px;
+  top : 0px;
+  width : 100%;
+  height : 3456px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#221947',endColorstr='#B88ABE' , GradientType=0);
+}
+.st2
+{
+  background : #FDEFF5;
+  background : rgba(253, 239, 245, 1);
+  position : absolute ;
+  left : 50%;
+  top : calc((3456px - 3222px) / 2);
+  width : 85%;
+  height : 3222px;
+  transform : translateX(-50%);
+}
 .image1
 {
   background-image : url(Portfolio_Buttons_Works.png);
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 75px;
-  top : 55px;
-  width : 112px;
-  height : 38px;
+  left : clamp(10px, 5.86vw, 75px);
+  top : 50px;
+  width : clamp(72px, 10vw, 112px);
+  height : auto;
   transition : filter 180ms ease, transform 180ms ease;
 }
 .image1:hover,
@@ -29,10 +56,10 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 205px;
-  top : 55px;
-  width : 112px;
-  height : 38px;
+  left : max(clamp(95px, 19vw, 205px), calc(clamp(10px, 5.86vw, 75px) + clamp(72px, 10vw, 112px) + 16px));
+  top : 50px;
+  width : clamp(72px, 10vw, 112px);
+  height : auto;
   transition : filter 180ms ease, transform 180ms ease;
 }
 .image:hover,
@@ -47,10 +74,10 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 1000px;
-  top : 55px;
-  width : 190px;
-  height : 50px;
+  right : 45px;
+  top : 50px;
+  width : min(190px, calc(100% - max(clamp(95px, 19vw, 205px), calc(clamp(10px, 5.86vw, 75px) + clamp(72px, 10vw, 112px) + 16px)) - clamp(72px, 10vw, 112px) - 26px));
+  height : auto;
 }
 .image3
 {
@@ -58,11 +85,11 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 625px;
-  top : 245px;
-  width : 100%;
-  max-width : 228px;
-  height : 435px;
+  left : max(10px, min(625px, calc(100% - 238px)));
+  top : 225px;
+  width : min(228px, calc(100% - 20px));
+  max-width : none;
+  height : auto;
 }
 .image3:hover,
 .image3:focus-visible
@@ -73,8 +100,8 @@ body
 .text1
 {
   position : absolute ;
-  left : 625px;
-  top : 676px;
+  left : max(10px, min(625px, calc(100% - 238px)));
+  top : 635px;
   font-family: 'Garamond';
   font-size: 14px;
   color: #8661a9;
@@ -85,10 +112,11 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 365px;
+  left : max(10px, min(365px, calc(100% - 545px)));
   top : 245px;
-  width : 535px;
-  height : 395px;
+  width : min(535px, calc(100% - 20px));
+  max-width : none;
+  height : auto;
 }
 .image5
 {
@@ -96,10 +124,11 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 285px;
+  left : max(10px, min(185px, calc(100% - 698px)));
   top : 785px;
-  width : 688px;
-  height : 345px;
+  width : min(688px, calc(100% - 20px));
+  max-width : none;
+  height : auto;
 }
 .image5:hover,
 .image5:focus-visible
@@ -110,7 +139,7 @@ body
 .text2
 {
   position : absolute ;
-  left : 285px;
+  left : max(10px, min(185px, calc(100% - 698px)));
   top : 1128px;
   font-family: 'Garamond';
   font-size: 14px;
@@ -122,10 +151,11 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 80px;
-  top : 80px;
-  width : 185px;
-  height : 245px;
+  left : min(50px, max(10px, calc(100% - clamp(135px, 14vw, 170px) - 10px)));
+  top : 90px;
+  width : min(170px, max(135px, 14vw), calc(100% - 20px));
+  max-width : none;
+  height : auto;
 }
 .image7
 {
@@ -133,8 +163,21 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 885px;
-  top : 600px;
-  width : 185px;
-  height : 245px;
+  left : min(930px, max(10px, calc(100% - clamp(135px, 14vw, 170px) - 10px)));
+  top : 750px;
+  width : min(170px, max(135px, 14vw), calc(100% - 20px));
+  max-width : none;
+  height : auto;
+}
+.image8
+{
+  background-image : url(Portfolio_Background_stars.png);
+  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
+  background-repeat : no-repeat;
+  position : absolute ;
+  left : 0px;
+  top : 0px;
+  width : 100%;
+  height : 3456px;
+  max-width : none;
 }
