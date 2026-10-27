@@ -96,7 +96,7 @@ body
 .image3:focus-visible
 {
   filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : translateX(-50%) scale(1.06);
+  transform : scale(1.06);
 }
 .text1
 {
@@ -106,6 +106,7 @@ body
   font-family: 'Garamond';
   font-size: 14px;
   color: #8661a9;
+  transform : scale(1.06);
 }
 .image4
 {
@@ -145,6 +146,7 @@ body
   font-family: 'Garamond';
   font-size: 14px;
   color: #8661a9;
+  transform : scale(1.06);
 }
 .image6
 {
