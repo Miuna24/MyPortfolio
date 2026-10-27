@@ -86,7 +86,7 @@ body
   background-repeat : no-repeat;
   position : absolute ;
   left : min(350px, calc(20% - 20px));
-  top : 150px;
+  top : 50px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
@@ -97,18 +97,6 @@ body
   filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
   transform : scale(1.06);
 }
-.image4
-{
-  background-image : url(Exploration1.png);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : max(10px, min(365px, calc(100% - 545px)));
-  top : 245px;
-  width : min(535px, calc(100% - 20px));
-  max-width : none;
-  height : auto;
-}
 .image5
 {
   background-image : url(DSGD99_Problem3.jpg);
@@ -116,7 +104,7 @@ body
   background-repeat : no-repeat;
   position : absolute ;
   left : 55%;
-  top : 520px;
+  top : 450px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
@@ -166,8 +154,8 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 25%;
-  top : 950px;
+  left : 20%;
+  top : 850px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
@@ -184,8 +172,8 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 52%;
-  top : 1400px;
+  left : 56%;
+  top : 1250px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
@@ -203,13 +191,13 @@ body
   background-repeat : no-repeat;
   position : absolute ;
   left : 15%;
-  top : 1800px;
+  top : 1650px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
 }
-.image10:hover,
-.image10:focus-visible
+.image11:hover,
+.image11:focus-visible
 {
   filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
   transform : scale(1.06);
@@ -253,7 +241,7 @@ body
   }
   .home-body .st1
   {
-    height : 1780px;
+    height : 2160px;
   }
   .home-body .st2
   {
@@ -282,7 +270,8 @@ body
   .home-body .image3,
   .home-body .image5,
   .home-body .image9,
-  .home-body .image10
+  .home-body .image10,
+  .home-body .image11
   {
     left : 50%;
     width : min(320px, calc(100vw - 40px));
@@ -305,6 +294,10 @@ body
   {
     top : 1300px;
   }
+  .home-body .image11
+  {
+    top : 1680px;
+  }
   .home-body .image3:hover,
   .home-body .image3:focus-visible,
   .home-body .image5:hover,
@@ -312,7 +305,9 @@ body
   .home-body .image9:hover,
   .home-body .image9:focus-visible,
   .home-body .image10:hover,
-  .home-body .image10:focus-visible
+  .home-body .image10:focus-visible,
+  .home-body .image11:hover,
+  .home-body .image11:focus-visible
   {
     transform : translateX(-50%) scale(1.04);
   }
@@ -521,6 +516,11 @@ figcaption
 {
   grid-template-columns : repeat(4, minmax(0, 1fr));
 }
+.dsgd99-content .feature-figure img
+{
+  aspect-ratio : 1787 / 590;
+  object-fit : contain;
+}
 .portfolio-grid figure img
 {
   aspect-ratio : 1;
@@ -589,5 +589,50 @@ figcaption
   .portfolio-footer
   {
     font-size : 8px;
+  }
+}
+
+.dsgd99-content
+{
+  padding-top : 0;
+}
+.dsgd100-page .dsgd100-content
+{
+  padding-top : 0;
+}
+.dsgd104-page .dsgd100-content
+{
+  padding-top : 0;
+}
+.portfolio-grid--two
+{
+  grid-template-columns : repeat(2, minmax(0, 1fr));
+}
+.dsgd104-content .feature-figure img
+{
+  aspect-ratio : 1532 / 1185;
+  object-fit : contain;
+}
+.dsgd104-content .portfolio-grid--posters img
+{
+  aspect-ratio : 806 / 1190;
+  object-fit : contain;
+}
+.dsgd104-content .portfolio-grid--installation img
+{
+  aspect-ratio : 1469 / 1186;
+  object-fit : contain;
+}
+.dsgd104-content .portfolio-grid--brochure img
+{
+  aspect-ratio : auto;
+  height : auto;
+  object-fit : contain;
+}
+@media (max-width: 700px)
+{
+  .dsgd104-content .portfolio-grid--two
+  {
+    grid-template-columns : 1fr;
   }
 }
