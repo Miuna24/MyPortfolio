@@ -85,12 +85,11 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 30%;
+  left : min(350px, calc(13% - 20px));
   top : 100px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
-  transform : translateX(-50%);
 }
 .image3:hover,
 .image3:focus-visible
@@ -101,7 +100,7 @@ body
 .text1
 {
   position : absolute ;
-  left : 14%;
+  left : 11%;
   top : 440px;
   font-family: 'Garamond';
   font-size: 14px;
@@ -126,7 +125,7 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : 53%;
+  left : 48%;
   top : 500px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
@@ -141,7 +140,7 @@ body
 .text2
 {
   position : absolute ;
-  left : 53%;
+  left : 48%;
   top : 840px;
   font-family: 'Garamond';
   font-size: 14px;
@@ -183,4 +182,60 @@ body
   width : 100%;
   height : 3455px;
   max-width : none;
+}
+.image9
+{
+  background-image : url(104Cover.png);
+  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
+  background-repeat : no-repeat;
+  position : absolute ;
+  left : 25%;
+  top : 950px;
+  width : min(350px, calc(100% - 20px));
+  max-width : 100%;
+  height : auto;
+}
+.image9:hover,
+.image9:focus-visible
+{
+  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
+  transform : scale(1.06);
+}
+.text3
+{
+  position : absolute ;
+  left : 25%;
+  top : 1270px;
+  font-family: 'Garamond';
+  font-size: 14px;
+  color: #8661a9;
+  transform : scale(1.06);
+}
+.image10
+{
+ background-image : url(93Cover.png);
+  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
+  background-repeat : no-repeat;
+  position : absolute ;
+  left : 45%;
+  top : 1400px;
+  width : min(350px, calc(100% - 20px));
+  max-width : 100%;
+  height : auto;
+}
+.image10:hover,
+.image10:focus-visible
+{
+  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
+  transform : scale(1.06);
+}
+.text4
+{
+  position : absolute ;
+  left : 45%;
+  top : 1730px;
+  font-family: 'Garamond';
+  font-size: 14px;
+  color: #8661a9;
+  transform : scale(1.06);
 }
