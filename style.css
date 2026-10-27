@@ -81,27 +81,28 @@ body
 }
 .image3
 {
-  background-image : url(Balloon2.png);
+  background-image : url(Project2.1_curved-03.jpg);
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : max(10px, min(625px, calc(100% - 238px)));
-  top : 225px;
-  width : min(228px, calc(100% - 20px));
-  max-width : none;
+  left : 30%;
+  top : 100px;
+  width : min(350px, calc(100% - 20px));
+  max-width : 100%;
   height : auto;
+  transform : translateX(-50%);
 }
 .image3:hover,
 .image3:focus-visible
 {
   filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : scale(1.06);
+  transform : translateX(-50%) scale(1.06);
 }
 .text1
 {
   position : absolute ;
-  left : max(10px, min(625px, calc(100% - 238px)));
-  top : 635px;
+  left : 14%;
+  top : 440px;
   font-family: 'Garamond';
   font-size: 14px;
   color: #8661a9;
@@ -120,14 +121,14 @@ body
 }
 .image5
 {
-  background-image : url(DSGD99_Cover.png);
+  background-image : url(DSGD99_Problem3.jpg);
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : max(10px, min(185px, calc(100% - 698px)));
-  top : 785px;
-  width : min(688px, calc(100% - 20px));
-  max-width : none;
+  left : 53%;
+  top : 500px;
+  width : min(350px, calc(100% - 20px));
+  max-width : 100%;
   height : auto;
 }
 .image5:hover,
@@ -139,8 +140,8 @@ body
 .text2
 {
   position : absolute ;
-  left : max(10px, min(185px, calc(100% - 698px)));
-  top : 1128px;
+  left : 53%;
+  top : 840px;
   font-family: 'Garamond';
   font-size: 14px;
   color: #8661a9;
