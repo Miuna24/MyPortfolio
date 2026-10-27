@@ -16,21 +16,26 @@ body
   background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
   position : absolute ;
   left : 0px;
-  top : 0px;
+  top : 130px;
   width : 100%;
-  height : 3456px;
+  height : 4500px;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#221947',endColorstr='#B88ABE' , GradientType=0);
 }
 .st2
 {
-  background : #FDEFF5;
-  background : rgba(253, 239, 245, 1);
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(184, 138, 190, 1) 0%,rgba(115, 88, 152, 1) 34.41%,rgba(73, 68, 130, 1) 71.44%,rgba(34, 25, 71, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(184, 138, 190, 1) ),color-stop(0.3441,rgba(115, 88, 152, 1) ),color-stop(0.7144,rgba(73, 68, 130, 1) ),color-stop(1,rgba(34, 25, 71, 1) ));
+  background : -o-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  background : -ms-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B88ABE', endColorstr='#221947' ,GradientType=0)";
+  background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
   position : absolute ;
-  left : 50%;
-  top : calc((3456px - 3222px) / 2);
-  width : 85%;
-  height : 3222px;
-  transform : translateX(-50%);
+  left : 0px;
+  top : 0px;
+  width : 100%;
+  height : 130px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#221947',endColorstr='#B88ABE' , GradientType=0);
 }
 .image1
 {
@@ -85,8 +90,8 @@ body
   /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
-  left : min(350px, calc(13% - 20px));
-  top : 100px;
+  left : min(350px, calc(20% - 20px));
+  top : 150px;
   width : min(350px, calc(100% - 20px));
   max-width : 100%;
   height : auto;
@@ -100,8 +105,8 @@ body
 .text1
 {
   position : absolute ;
-  left : 11%;
-  top : 440px;
+  left : 18%;
+  top : 490px;
   font-family: 'Garamond';
   font-size: 14px;
   color: #8661a9;
@@ -173,14 +178,11 @@ body
 }
 .image8
 {
-  background-image : url(Portfolio_Background_stars.png);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
   background-repeat : no-repeat;
   position : absolute ;
   left : 0px;
-  top : 0px;
-  width : 100%;
-  height : 3455px;
+  top : 100pxpx;
+  height : auto;
   max-width : none;
 }
 .image9
@@ -238,4 +240,275 @@ body
   font-size: 14px;
   color: #8661a9;
   transform : scale(1.06);
+}
+
+@media (max-width: 700px)
+{
+  .image3,
+  .image5,
+  .image9,
+  .image10,
+  .text1,
+  .text2,
+  .text3,
+  .text4
+  {
+    transform : scale(0.9);
+    transform-origin : top left;
+  }
+
+  .image3:hover,
+  .image3:focus-visible,
+  .image5:hover,
+  .image5:focus-visible,
+  .image9:hover,
+  .image9:focus-visible,
+  .image10:hover,
+  .image10:focus-visible
+  {
+    transform : scale(0.954);
+  }
+}
+
+/* DSGD 100 portfolio page */
+.dsgd100-body
+{
+  min-height : 100vh;
+  overflow-x : hidden;
+  background : #221947;
+}
+.portfolio-nav
+{
+  position : absolute;
+  z-index : 4;
+  left : 0;
+  top : 0;
+  width : 100%;
+  height : 150px;
+  pointer-events : none;
+}
+.portfolio-nav a,
+.portfolio-nav .image2
+{
+  pointer-events : auto;
+}
+.portfolio-nav .image8
+{
+  z-index : -1;
+  pointer-events : none;
+}
+.dsgd100-content
+{
+  position : relative;
+  z-index : 2;
+  width : min(1120px, calc(100% - 48px));
+  margin : 0 auto;
+  padding : 360px 0 70px;
+  color : #33234d;
+}
+.dsgd100-intro
+{
+  display : grid;
+  grid-template-columns : minmax(0, 1fr) minmax(220px, 0.55fr);
+  align-items : end;
+  gap : 40px;
+  padding : 52px 0 78px;
+  border-top : 1px solid rgba(253, 239, 245, 0.55);
+}
+.eyebrow,
+.section-number,
+.portfolio-footer,
+figcaption
+{
+  font-family : Garamond;
+  letter-spacing : 0.11em;
+  text-transform : uppercase;
+}
+.eyebrow
+{
+  grid-column : 1 / -1;
+  margin : 0;
+  color : #f8d8e8;
+  font-size : 11px;
+  font-weight : 700;
+}
+.dsgd100-intro h1
+{
+  margin : 0;
+  color : #fdeff5;
+  font-family : Garamond;
+  font-size : clamp(48px, 8vw, 104px);
+  font-weight : 400;
+  letter-spacing : -0.065em;
+  line-height : 0.88;
+}
+.dsgd100-intro h1 em
+{
+  color : #d79bd1;
+  font-style : italic;
+}
+.intro-copy
+{
+  max-width : 280px;
+  margin : 0 0 4px auto;
+  color : #fdeff5;
+  font-family : Garamond;
+  font-size : 13px;
+  line-height : 1.55;
+}
+.portfolio-section
+{
+  padding : 44px 0 86px;
+}
+.portfolio-opening
+{
+  padding-top : 0;
+}
+.portfolio-closing
+{
+  padding-bottom : 28px;
+}
+.section-heading
+{
+  display : flex;
+  align-items : center;
+  gap : 14px;
+  margin-bottom : 22px;
+}
+.section-number
+{
+  color : #8965aa;
+  font-size : 11px;
+  font-weight : 700;
+}
+.section-heading h2
+{
+  margin : 0;
+  color : #fdeff5;
+  font-family : Garamond;
+  font-size : clamp(24px, 3vw, 38px);
+  font-weight : 400;
+  letter-spacing : -0.04em;
+}
+.section-rule
+{
+  height : 1px;
+  flex : 1;
+  margin-left : 8px;
+  background : rgba(253, 239, 245, 0.3);
+}
+figure
+{
+  margin : 0;
+}
+figure img
+{
+  display : block;
+  width : 100%;
+  height : auto;
+  background : #f7e7ef;
+}
+figure img:hover
+{
+  filter : brightness(1.04);
+}
+figcaption
+{
+  margin-top : 10px;
+  color : #d9bed8;
+  font-size : 9px;
+  line-height : 1.4;
+}
+.feature-figure img
+{
+  aspect-ratio : 1704 / 1042;
+  object-fit : cover;
+}
+.poster-figure
+{
+  width : min(520px, 76%);
+  margin : 0 auto;
+}
+.portfolio-grid
+{
+  display : grid;
+  gap : 18px;
+}
+.portfolio-grid--three
+{
+  grid-template-columns : repeat(3, minmax(0, 1fr));
+}
+.portfolio-grid--four
+{
+  grid-template-columns : repeat(4, minmax(0, 1fr));
+}
+.portfolio-grid figure img
+{
+  aspect-ratio : 1;
+  object-fit : cover;
+}
+.portfolio-footer
+{
+  display : flex;
+  justify-content : space-between;
+  gap : 20px;
+  padding-top : 28px;
+  border-top : 1px solid rgba(253, 239, 245, 0.3);
+  color : #d9bed8;
+  font-size : 10px;
+}
+.portfolio-footer a
+{
+  color : #fdeff5;
+  text-decoration : none;
+}
+.portfolio-footer a:hover,
+.portfolio-footer a:focus-visible
+{
+  color : #d79bd1;
+}
+@media (max-width: 700px)
+{
+  .dsgd100-content
+  {
+    width : min(100% - 28px, 560px);
+    padding-top : 290px;
+  }
+  .dsgd100-intro
+  {
+    display : block;
+    padding : 34px 0 58px;
+  }
+  .dsgd100-intro h1
+  {
+    margin-top : 18px;
+    font-size : clamp(46px, 15vw, 76px);
+  }
+  .intro-copy
+  {
+    max-width : 250px;
+    margin : 28px 0 0;
+  }
+  .portfolio-section
+  {
+    padding : 32px 0 58px;
+  }
+  .section-heading h2
+  {
+    font-size : 25px;
+  }
+  .poster-figure
+  {
+    width : 82%;
+  }
+  .portfolio-grid--three,
+  .portfolio-grid--four
+  {
+    grid-template-columns : repeat(2, minmax(0, 1fr));
+    gap : 12px;
+  }
+  .portfolio-footer
+  {
+    font-size : 8px;
+  }
 }
