@@ -604,6 +604,44 @@ figcaption
 {
   padding-top : 0;
 }
+.about-body
+{
+  min-height : 100vh;
+  overflow-x : hidden;
+  background : #221947;
+}
+@media (max-width: 700px)
+{
+  .about-body .st1
+  {
+    height : calc(100vh - 130px);
+    min-height : 600px;
+  }
+  .about-body .st2
+  {
+    height : 130px;
+  }
+  .about-body .image1,
+  .about-body .image
+  {
+    top : 28px;
+    width : 72px;
+  }
+  .about-body .image1
+  {
+    left : 16px;
+  }
+  .about-body .image
+  {
+    left : 100px;
+  }
+  .about-body .image2
+  {
+    top : 28px;
+    right : 16px;
+    width : min(110px, calc(100% - 210px));
+  }
+}
 .portfolio-grid--two
 {
   grid-template-columns : repeat(2, minmax(0, 1fr));
