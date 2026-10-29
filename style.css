@@ -684,24 +684,24 @@ figcaption
 }
 .home-navigation .image2
 {
-  left : 6vw;
-  right : auto;
-  top : 42px;
-  width : min(190px, 15vw);
+  left : auto;
+  right : 45px;
+  top : 50px;
+  width : min(190px, calc(100% - 250px));
 }
 .home-navigation .image1
 {
-  left : auto;
-  right : 23vw;
-  top : 42px;
-  width : min(112px, 10vw);
+  left : clamp(16px, 5.86vw, 75px);
+  right : auto;
+  top : 50px;
+  width : clamp(72px, 10vw, 112px);
 }
 .home-navigation .image
 {
-  left : auto;
-  right : 8vw;
-  top : 42px;
-  width : min(112px, 10vw);
+  left : max(clamp(95px, 19vw, 205px), calc(clamp(16px, 5.86vw, 75px) + clamp(72px, 10vw, 112px) + 16px));
+  right : auto;
+  top : 50px;
+  width : clamp(72px, 10vw, 112px);
 }
 @media (max-width: 700px)
 {
@@ -799,5 +799,57 @@ figcaption
     left : auto;
     right : 16px;
     width : min(110px, calc(100% - 210px));
+  }
+}
+
+/* Logo-triggered falling stars */
+.falling-stars
+{
+  position : fixed;
+  z-index : 20;
+  inset : 0;
+  overflow : hidden;
+  pointer-events : none;
+}
+.falling-star
+{
+  position : absolute;
+  top : -30px;
+  display : block;
+  color : #ffd36a;
+  font-family : Georgia, serif;
+  font-size : var(--star-size);
+  line-height : 1;
+  opacity : 0;
+  text-shadow : 0 0 5px rgba(255, 213, 107, 0.95), 0 0 12px rgba(255, 158, 55, 0.75);
+  animation : falling-star var(--star-duration) linear var(--star-delay) infinite;
+}
+@keyframes falling-star
+{
+  0%
+  {
+    opacity : 0;
+    transform : translate3d(0, -30px, 0) rotate(0deg) scale(0.65);
+  }
+  12%
+  {
+    opacity : var(--star-opacity);
+  }
+  82%
+  {
+    opacity : var(--star-opacity);
+  }
+  100%
+  {
+    opacity : 0;
+    transform : translate3d(var(--star-drift), 110vh, 0) rotate(360deg) scale(1.1);
+  }
+}
+@media (prefers-reduced-motion: reduce)
+{
+  .falling-star
+  {
+    animation-duration : 0.01ms;
+    animation-iteration-count : 1;
   }
 }
