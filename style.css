@@ -845,6 +845,67 @@ figcaption
   height : auto;
   pointer-events : none;
 }
+.compact-project-page .st1
+{
+  height : auto;
+  min-height : 0;
+  padding-bottom : clamp(220px, 26vw, 420px);
+}
+html,
+body
+{
+  max-width : 100%;
+  overflow-x : hidden;
+}
+img
+{
+  max-width : 100%;
+}
+@media (max-width: 900px)
+{
+  .dsgd100-content
+  {
+    width : calc(100% - 40px);
+  }
+  .portfolio-grid--three,
+  .portfolio-grid--four
+  {
+    grid-template-columns : repeat(2, minmax(0, 1fr));
+  }
+  .poster-figure
+  {
+    width : min(520px, 90%);
+  }
+  .section-heading
+  {
+    gap : 10px;
+  }
+}
+@media (max-width: 520px)
+{
+  .dsgd100-content
+  {
+    width : calc(100% - 28px);
+  }
+  .portfolio-grid--three,
+  .portfolio-grid--four,
+  .portfolio-grid--two
+  {
+    grid-template-columns : 1fr;
+  }
+  .poster-figure
+  {
+    width : 100%;
+  }
+  .section-heading h2
+  {
+    font-size : 22px;
+  }
+  .section-rule
+  {
+    margin-left : 4px;
+  }
+}
 
 /* Home project grid beneath the featured Celebration work */
 .home-grid
