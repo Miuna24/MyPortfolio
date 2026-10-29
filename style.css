@@ -657,10 +657,10 @@ figcaption
 }
 .home-butterfly--2
 {
-  top : 440px;
-  right : 5%;
+  top : 850px;
+  left : 8%;
   width : 300px;
-  transform : rotate(10deg);
+  transform : rotate(-20deg);
 }
 .home-butterfly--3
 {
