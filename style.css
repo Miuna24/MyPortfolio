@@ -802,6 +802,39 @@ figcaption
   }
 }
 
+.back-to-works
+{
+  position : relative;
+  right : auto;
+  bottom : auto;
+  z-index : 3;
+  display : block;
+  width : max-content;
+  margin : 0 clamp(20px, 5vw, 75px) 40px auto;
+  padding : 12px 18px;
+  border : 1px solid rgba(253, 239, 245, 0.7);
+  color : #fdeff5;
+  font-family : Garamond, Georgia, serif;
+  font-size : 18px;
+  text-decoration : none;
+  transition : background 180ms ease, color 180ms ease;
+}
+.back-to-works:hover,
+.back-to-works:focus-visible
+{
+  background : #fdeff5;
+  color : #33234d;
+}
+@media (max-width: 700px)
+{
+  .back-to-works
+  {
+    margin-right : 16px;
+    margin-bottom : 24px;
+    font-size : 16px;
+  }
+}
+
 /* Logo-triggered falling stars */
 .falling-stars
 {
