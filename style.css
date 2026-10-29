@@ -7,31 +7,24 @@ body
 }
 .st1
 {
-  background : -moz-linear-gradient(50% 100% 90deg,rgba(184, 138, 190, 1) 0%,rgba(115, 88, 152, 1) 34.41%,rgba(73, 68, 130, 1) 71.44%,rgba(34, 25, 71, 1) 100%);
-  background : -webkit-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
-  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(184, 138, 190, 1) ),color-stop(0.3441,rgba(115, 88, 152, 1) ),color-stop(0.7144,rgba(73, 68, 130, 1) ),color-stop(1,rgba(34, 25, 71, 1) ));
-  background : -o-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
-  background : -ms-linear-gradient(90deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B88ABE', endColorstr='#221947' ,GradientType=0)";
-  background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
-  position : absolute ;
-  left : 0px;
+  position : absolute;
+  left : 0;
   top : 130px;
   width : 100%;
   height : 4500px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#221947',endColorstr='#B88ABE' , GradientType=0);
+  background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
 }
 .st2
 {
-  background : #211846;
-  background : rgba(33, 24, 70, 1);
-  position : absolute ;
-  left : 0px;
-  top : 0px;
+  position : absolute;
+  z-index : 4;
+  left : 0;
+  top : 0;
   width : 100%;
   height : 130px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#221947',endColorstr='#B88ABE' , GradientType=0);
+  background : rgba(33, 24, 70, 1);
 }
+
 .image1
 {
   background-image : url(Portfolio_Buttons_Works.png);
@@ -906,6 +899,7 @@ img
     margin-left : 4px;
   }
 }
+
 .about-content
 {
   position : relative;
@@ -1031,3 +1025,4 @@ img
     animation-iteration-count : 1;
   }
 }
+
