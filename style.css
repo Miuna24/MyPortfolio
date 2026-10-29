@@ -79,129 +79,6 @@ body
   width : min(190px, calc(100% - max(clamp(95px, 19vw, 205px), calc(clamp(10px, 5.86vw, 75px) + clamp(72px, 10vw, 112px) + 16px)) - clamp(72px, 10vw, 112px) - 26px));
   height : auto;
 }
-.image3
-{
-  background-image : url(Project2.1_curved-03.jpg);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : min(350px, calc(20% - 20px));
-  top : 50px;
-  width : min(350px, calc(100% - 20px));
-  max-width : 100%;
-  height : auto;
-}
-.image3:hover,
-.image3:focus-visible
-{
-  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : scale(1.06);
-}
-.image5
-{
-  background-image : url(DSGD99_Problem3.jpg);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : 55%;
-  top : 450px;
-  width : min(350px, calc(100% - 20px));
-  max-width : 100%;
-  height : auto;
-}
-.image5:hover,
-.image5:focus-visible
-{
-  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : scale(1.06);
-}
-.image6
-{
-  background-image : url(Butterfly_3.png);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : min(50px, max(10px, calc(100% - clamp(135px, 14vw, 170px) - 10px)));
-  top : 90px;
-  width : min(170px, max(135px, 14vw), calc(100% - 20px));
-  max-width : none;
-  height : auto;
-}
-.image7
-{
-  background-image : url(Butterfly_2.png);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : min(930px, max(10px, calc(100% - clamp(135px, 14vw, 170px) - 10px)));
-  top : 750px;
-  width : min(170px, max(135px, 14vw), calc(100% - 20px));
-  max-width : none;
-  height : auto;
-}
-.image8
-{
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : 0px;
-  top : 100pxpx;
-  height : auto;
-  max-width : none;
-}
-.image9
-{
-  background-image : url(104Cover.png);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : 20%;
-  top : 850px;
-  width : min(350px, calc(100% - 20px));
-  max-width : 100%;
-  height : auto;
-}
-.image9:hover,
-.image9:focus-visible
-{
-  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : scale(1.06);
-}
-.image10
-{
- background-image : url(93Cover.png);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : 56%;
-  top : 1250px;
-  width : min(350px, calc(100% - 20px));
-  max-width : 100%;
-  height : auto;
-}
-.image10:hover,
-.image10:focus-visible
-{
-  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : scale(1.06);
-}
-.image11
-{
- background-image : url(111Cover.jpg);
-  /*To create image referenced in CSS, use 'Export Selected CSS' command.*/
-  background-repeat : no-repeat;
-  position : absolute ;
-  left : 15%;
-  top : 1650px;
-  width : min(350px, calc(100% - 20px));
-  max-width : 100%;
-  height : auto;
-}
-.image11:hover,
-.image11:focus-visible
-{
-  filter : brightness(1) drop-shadow(0 0 8px rgba(221, 137, 254, 0.9));
-  transform : scale(1.06);
-}
 
 
 @media (max-width: 700px)
@@ -672,5 +549,255 @@ figcaption
   .dsgd104-content .portfolio-grid--two
   {
     grid-template-columns : 1fr;
+  }
+}
+
+/* Sketch-inspired home composition */
+.home-body
+{
+  background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  color : #fdeff5;
+  overflow-x : hidden;
+}
+.home-body .st1
+{
+  position : absolute;
+  left : 0;
+  top : 0;
+  width : 100%;
+  height : 2600px;
+  background : linear-gradient(0deg, rgba(184, 138, 190, 1) 0%, rgba(115, 88, 152, 1) 34.41%, rgba(73, 68, 130, 1) 71.44%, rgba(34, 25, 71, 1) 100%);
+  z-index : 0;
+}
+.home-board
+{
+  position : relative;
+  z-index : 1;
+  width : min(1240px, calc(100% - 80px));
+  height : 2350px;
+  margin : 0 auto;
+  padding-top : 210px;
+}
+.home-card
+{
+  position : absolute;
+  display : block;
+  color : #fdeff5;
+  text-decoration : none;
+}
+.home-card img
+{
+  display : block;
+  width : 100%;
+  aspect-ratio : 1;
+  border : 1px solid rgba(253, 239, 245, 0.75);
+  object-fit : cover;
+  transition : transform 180ms ease, filter 180ms ease;
+}
+.home-card:hover img,
+.home-card:focus-visible img
+{
+  filter : brightness(1.08) drop-shadow(0 0 10px rgba(221, 137, 254, 0.9));
+  transform : scale(1.025);
+}
+.home-meta
+{
+  display : flex;
+  justify-content : space-between;
+  gap : 16px;
+  margin-top : 10px;
+  font-family : Garamond, Georgia, serif;
+  font-size : 18px;
+  line-height : 1.1;
+  color : #fdeff5;
+}
+.home-card--100
+{
+  left : 4%;
+  top : 250px;
+  width : min(560px, 48%);
+}
+.home-card--99
+{
+  left : 65%;
+  top : 880px;
+  width : min(330px, 29%);
+}
+.home-card--104
+{
+  left : 6%;
+  top : 1300px;
+  width : min(330px, 29%);
+}
+.home-card--adv
+{
+  left : 56%;
+  top : 1640px;
+  width : min(350px, 30%);
+}
+.home-card--111
+{
+  left : 18%;
+  top : 2050px;
+  width : min(350px, 30%);
+}
+.home-butterfly
+{
+  position : absolute;
+  display : block;
+  height : auto;
+  pointer-events : none;
+}
+.home-butterfly--1
+{
+  top : 270px;
+  right : 20%;
+  width : 150px;
+  transform : rotate(8deg);
+}
+.home-butterfly--2
+{
+  top : 760px;
+  right : 6%;
+  width : 135px;
+  transform : rotate(27deg);
+}
+.home-butterfly--3
+{
+  top : 1260px;
+  left : 34%;
+  width : 105px;
+  transform : rotate(-24deg);
+}
+.home-butterfly--4
+{
+  top : 1810px;
+  right : 7%;
+  width : 115px;
+  transform : rotate(12deg);
+}
+.home-navigation
+{
+  z-index : 5;
+  background : transparent;
+  filter : none;
+}
+.home-navigation .image2
+{
+  left : 6vw;
+  right : auto;
+  top : 42px;
+  width : min(190px, 15vw);
+}
+.home-navigation .image1
+{
+  left : auto;
+  right : 23vw;
+  top : 42px;
+  width : min(112px, 10vw);
+}
+.home-navigation .image
+{
+  left : auto;
+  right : 8vw;
+  top : 42px;
+  width : min(112px, 10vw);
+}
+@media (max-width: 700px)
+{
+  .home-body .st1
+  {
+    height : 2300px;
+  }
+  .home-board
+  {
+    width : calc(100% - 32px);
+    height : 2150px;
+    padding-top : 130px;
+  }
+  .home-card--100
+  {
+    left : 4%;
+    top : 150px;
+    width : 57%;
+  }
+  .home-card--99
+  {
+    left : 39%;
+    top : 590px;
+    width : 55%;
+  }
+  .home-card--104
+  {
+    left : 5%;
+    top : 1010px;
+    width : 55%;
+  }
+  .home-card--adv
+  {
+    left : 39%;
+    top : 1400px;
+    width : 56%;
+  }
+  .home-card--111
+  {
+    left : 14%;
+    top : 1790px;
+    width : 56%;
+  }
+  .home-meta
+  {
+    font-size : 18px;
+  }
+  .home-butterfly--1
+  {
+    top : 200px;
+    right : 2%;
+    width : 82px;
+  }
+  .home-butterfly--2
+  {
+    top : 570px;
+    right : 1%;
+    width : 75px;
+  }
+  .home-butterfly--3
+  {
+    top : 980px;
+    left : 66%;
+    width : 68px;
+  }
+  .home-butterfly--4
+  {
+    top : 1620px;
+    right : 2%;
+    width : 70px;
+  }
+  .home-navigation
+  {
+    height : 110px;
+  }
+  .home-navigation .image1,
+  .home-navigation .image
+  {
+    top : 28px;
+    width : 72px;
+  }
+  .home-navigation .image1
+  {
+    left : 16px;
+    right : auto;
+  }
+  .home-navigation .image
+  {
+    left : 100px;
+    right : auto;
+  }
+  .home-navigation .image2
+  {
+    top : 28px;
+    left : auto;
+    right : 16px;
+    width : min(110px, calc(100% - 210px));
   }
 }
