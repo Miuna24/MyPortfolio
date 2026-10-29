@@ -657,23 +657,23 @@ figcaption
 }
 .home-butterfly--2
 {
-  top : 850px;
-  left : 8%;
+  top : 500px;
+  right : 8%;
   width : 300px;
   transform : rotate(-20deg);
 }
 .home-butterfly--3
 {
-  top : 1245px;
-  right : 20%;
-  width : 300px;
+  top : 1280px;
+  right : 40%;
+  width : 150px;
   transform : rotate(10deg);
 }
 .home-butterfly--4
 {
-  top : 1700px;
+  top : 1800px;
   left : 7%;
-  width : 300px;
+  width : 200px;
   transform : rotate(12deg);
 }
 .home-navigation
@@ -832,6 +832,52 @@ figcaption
     margin-right : 16px;
     margin-bottom : 24px;
     font-size : 16px;
+  }
+}
+.page-clouds
+{
+  position : absolute;
+  z-index : 0;
+  left : 0;
+  bottom : 0;
+  display : block;
+  width : 100%;
+  height : auto;
+  pointer-events : none;
+}
+
+/* Home project grid beneath the featured Celebration work */
+.home-grid
+{
+  position : absolute;
+  left : 6%;
+  top : 930px;
+  width : 88%;
+  display : grid;
+  grid-template-columns : repeat(2, minmax(0, 1fr));
+  gap : 80px 110px;
+}
+.home-grid .home-card
+{
+  position : relative;
+  left : auto;
+  top : auto;
+  width : min(350px, 100%);
+  justify-self : center;
+}
+@media (max-width: 700px)
+{
+  .home-grid
+  {
+    left : 4%;
+    top : 540px;
+    width : 92%;
+    grid-template-columns : 1fr;
+    gap : 58px;
+  }
+  .home-grid .home-card
+  {
+    width : min(310px, 82%);
   }
 }
 
